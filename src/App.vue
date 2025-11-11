@@ -1,13 +1,14 @@
 <!-- Javascript -->
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AppHeader from './components/AppHeader.vue'
+import Task from './components/Task.vue'
+</script>
 
 <!-- HTML -->
 <template>
-  <h1>👌You DIDI</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <AppHeader />
+  <Task :isChecked="true"> Membuat Komponen Task </Task>
+  <Task :isChecked="false"> Belajar Vue.js Dasar </Task>
 </template>
 
 <!-- CSS -->
@@ -17,29 +18,31 @@
   padding: 0;
   box-sizing: border-box;
   font-family:
-    poppins,
+    'Poppins',
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
     'Segoe UI',
     Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
     'Helvetica Neue',
-    Arial,
     sans-serif;
 }
 
 body {
-  background-color: #59f9f9;
-  color: #f9f6f6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  background: #f3f4f6;
 }
 #app {
   min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscale;
   text-align: center;
-  background: linear-gradient(135deg, #afbae8 0%, #667eea 50%);
+  color: #2c3e50;
+  font-size: 1.2rem;
 }
 </style>
