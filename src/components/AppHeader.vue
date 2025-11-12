@@ -1,15 +1,5 @@
 <template>
-  <h1>👌You DIDI</h1>
+  <header class="py-4 px-4">
+    <h1 class="text-4xl text-white font-bold mb-2">✨ Todo List</h1>
+  </header>
 </template>
-<style scoped>
-.app-header {
-  background-color: #42b983;
-  padding: 20px;
-  text-align: center;
-  color: white;
-}
-h1 {
-  margin: 0;
-  font-size: 2.5em;
-}
-</style>
